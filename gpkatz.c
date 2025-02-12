@@ -36,11 +36,11 @@ int main(char argc, char **argv){
 		return 1;
 	}
 	
-    if (!GetComputerName(computer_name, &computer_name_size)) {
-        printf("Failed to get computer name: %d\n", GetLastError());
+	if (!GetComputerName(computer_name, &computer_name_size)) {
+		printf("Failed to get computer name: %d\n", GetLastError());
 		CredFree(target_creds);
-        return 2;
-    }	
+		return 2;
+	}	
 	
 	LookupAccountName(NULL, computer_name, NULL, &sid_size, domain_name, &domain_size, &sid_type);
 	sid = (PSID) malloc(sid_size);
