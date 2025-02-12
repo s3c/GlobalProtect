@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <sddl.h>
 
-//gcc -o gpkatz2.exe gpkatz2.c crypt.c
+//gcc -o gpkatz.exe gpkatz.c crypt.c
 
 #define MAX_DOMAIN_LENGTH 256
 #define AES_KEY_SIZE 32
