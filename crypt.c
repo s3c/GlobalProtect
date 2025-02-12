@@ -2,8 +2,6 @@
 #include <wincrypt.h>
 #include <stdio.h>
 
-//gcc -o crypt.exe crypt.c
-
 /*
 #!/usr/bin/env python3
 
